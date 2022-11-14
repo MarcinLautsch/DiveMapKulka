@@ -38,6 +38,21 @@ img {
 	box-shadow: 8px 8px 24px 0px rgba(34, 34, 34, 0.6);
 }
 
+li {
+	text-transform: lowercase;
+	font-weight: bold;
+
+	&::marker {
+		font-style: italic;
+		color: black;
+	}
+}
+
+span {
+	color: black;
+	text-transform: uppercase;
+}
+
 .legenda-bg {
 	position: relative;
 	display: flex;
@@ -53,10 +68,10 @@ img {
 ol {
 	background-color: white;
 	border-radius: 25px;
-	column-count: 5;
+	column-count: 4;
 	column-gap: 40px;
 	margin-left: 30px;
-	font-size: 14px;
+	font-size: 12px;
 	padding: 10px;
 	width: 100%;
 	list-style-position: inside;
@@ -115,11 +130,58 @@ ol {
 		@include sizing(100%, 100%);
 		position: absolute;
 		padding: 20px;
-		left: 50px;
+		left: 110px;
 		filter: blur(8px);
-		box-shadow: 28px -28px 39px 2px rgba(26, 26, 26, 0.5);
+		box-shadow: 28px -28px 39px 2px rgba(26, 26, 26, 0.35);
 		transform: skew(-44deg, 0deg);
-		background-color: rgba(26, 26, 26, 0.5);
+		background-color: rgba(26, 26, 26, 0.35);
+		border-radius: 25px;
+		transition: all 0.5s;
+	}
+}
+
+.popap-container-2 {
+	opacity: 0;
+	position: absolute;
+	transform: translate(-50%, -60%);
+	left: 50%;
+	top: 10%;
+	width: 240px;
+	transition: all 0.5s;
+
+	&__content {
+		position: relative;
+		width: 100%;
+		padding: 20px;
+		font-size: 18px;
+		background: linear-gradient(-45deg, #37d5d6, #36096d);
+		border-radius: 25px;
+		border: 2px solid black;
+
+		&::before {
+			position: absolute;
+			border: 4px solid rgba(53, 53, 53, 0.45);
+			border-left: 20px solid transparent;
+			border-right: 20px solid transparent;
+			border-top: 20px solid rgb(70, 174, 255);
+			margin-left: -20px;
+			left: 50%;
+			height: 0;
+			bottom: -15px;
+			width: 0;
+			content: '';
+		}
+	}
+
+	&__shadow {
+		@include sizing(100%, 100%);
+		position: absolute;
+		padding: 20px;
+		left: 110px;
+		filter: blur(8px);
+		box-shadow: 28px -28px 39px 2px rgba(26, 26, 26, 0.35);
+		transform: skew(-44deg, 0deg);
+		background-color: rgba(26, 26, 26, 0.35);
 		border-radius: 25px;
 		transition: all 0.5s;
 	}
@@ -135,21 +197,21 @@ ol {
 .infoPlace {
 	list-style-type: none;
 	margin: 0 auto;
-	border: 1.6px solid black;
-	box-shadow: 8px 8px 24px 0px rgba(22, 22, 22, 0.6);
+	border: 1.8px solid black;
+	box-shadow: 8px 8px 24px 0px rgba(187, 187, 187, 0.65);
 }
 
 .point {
 	position: absolute;
-	margin-top: 20px;
 	transform: translate(-50%, 0%);
 	left: 10%;
-	top: 23%;
+	top: 20%;
 	z-index: 2;
 	background-color: transparent;
 	border: 0;
 	padding: 0;
 	margin: 0;
+	font-size: 30px;
 
 	&:hover {
 		cursor: pointer;
@@ -158,13 +220,35 @@ ol {
 	&:focus {
 		~ .popap-container {
 			opacity: 1;
-			// transform: translate(-50%, -50%) scale(1.1);
+			transform-origin: center center;
+		}
+	}
+}
+.point-2 {
+	position: absolute;
+	transform: translate(-50%, 0%);
+	left: 50%;
+	top: 20%;
+	z-index: 2;
+	background-color: transparent;
+	border: 0;
+	padding: 0;
+	margin: 0;
+	font-size: 30px;
+
+	&:hover {
+		cursor: pointer;
+	}
+
+	&:focus {
+		~ .popap-container-2 {
+			opacity: 1;
 			transform-origin: center center;
 		}
 	}
 }
 
-// Kamil
-// Shadow zeby sie animowal jak .popap
-// jak ew. powiekszyc img
-// trojkat dac na dol ??
+.btn {
+	text-decoration: inherit;
+	color: magenta;
+}
