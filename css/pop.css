@@ -7,13 +7,19 @@
 body {
   font-family: "Montserrat";
   font-size: 40px;
-  background-color: rgb(116, 114, 114);
+  background-color: #333;
 }
 
 .oversize {
   display: flex;
   align-items: center;
   height: 170px;
+}
+
+.logo {
+  margin-left: 50px;
+  width: 400px;
+  filter: drop-shadow(0 0mm 4mm rgb(245, 245, 245));
 }
 
 .map {
@@ -24,70 +30,24 @@ body {
 img {
   display: block;
   width: 100%;
+}
+
+.map {
+  border-top: 4px solid whitesmoke;
+}
+
+.img-info {
   border-radius: 25px;
-}
-
-.popap {
-  position: absolute;
-  transform: translate(-50%, -60%);
-  left: 10%;
-  top: 10%;
-  width: 240px;
-  padding: 20px;
-  font-size: 18px;
-  background: linear-gradient(-45deg, #37d5d6, #36096d);
-  border-radius: 25px;
-  transition: all 0.5s;
-}
-.popap--2 {
-  left: 50%;
-  top: 30%;
-}
-.popap:hover {
-  opacity: 1;
-}
-
-.popap::after {
-  position: absolute;
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  border-top: 20px solid lime;
-  margin-left: -20px;
-  left: 50%;
-  height: 0;
-  bottom: -15px;
-  width: 0;
-  content: "";
-}
-
-span {
-  color: whitesmoke;
-}
-
-.ikonka {
-  position: absolute;
-  transform: translate(-50%, 0%);
-  left: 10%;
-  top: 23%;
-  z-index: 2;
-}
-
-.ikonka:hover ~ .popap {
-  opacity: 1;
-  transform: translate(-50%, -70%) scale(1.1);
-  transform-origin: center center;
-}
-
-.logo {
-  margin-left: 50px;
-  width: 400px;
+  border: 2px solid whitesmoke;
+  margin-bottom: 10px;
+  box-shadow: 8px 8px 24px 0px rgba(34, 34, 34, 0.6);
 }
 
 .legenda-bg {
   position: relative;
   display: flex;
   align-items: center;
-  background-color: rgb(68, 68, 68);
+  background-color: rgb(126, 126, 126);
   border-radius: 25px;
   margin-left: 40px;
   margin-right: 40px;
@@ -110,12 +70,97 @@ ol {
 }
 
 .legend-text {
-  font-size: 18px;
   position: absolute;
-  left: -5px;
-  transform: rotate(90deg);
+  padding-top: 60px;
+  left: -68px;
+  font-family: "Montserrat";
+  font-size: 26px;
+  font-weight: 500;
+  color: whitesmoke;
+  transform: rotate(-90deg);
 }
 
 .compass {
-  margin-right: 20px;
+  margin-left: 10px;
+  width: 130px;
+}
+
+.popap-container {
+  opacity: 0;
+  position: absolute;
+  transform: translate(-50%, -60%);
+  left: 10%;
+  top: 10%;
+  width: 240px;
+  transition: all 0.5s;
+}
+.popap-container__content {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  font-size: 18px;
+  background: linear-gradient(-45deg, #37d5d6, #36096d);
+  border-radius: 25px;
+  border: 2px solid black;
+}
+.popap-container__content::before {
+  position: absolute;
+  border: 4px solid rgba(53, 53, 53, 0.45);
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid rgb(70, 174, 255);
+  margin-left: -20px;
+  left: 50%;
+  height: 0;
+  bottom: -15px;
+  width: 0;
+  content: "";
+}
+.popap-container__shadow {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  padding: 20px;
+  left: 50px;
+  filter: blur(8px);
+  box-shadow: 28px -28px 39px 2px rgba(26, 26, 26, 0.5);
+  transform: skew(-44deg, 0deg);
+  background-color: rgba(26, 26, 26, 0.5);
+  border-radius: 25px;
+  transition: all 0.5s;
+}
+
+.diveInfo ~ ol {
+  font-size: 12px;
+  font-weight: 600;
+  -moz-column-count: 1;
+       column-count: 1;
+  color: black;
+}
+
+.infoPlace {
+  list-style-type: none;
+  margin: 0 auto;
+  border: 1.6px solid black;
+  box-shadow: 8px 8px 24px 0px rgba(22, 22, 22, 0.6);
+}
+
+.point {
+  position: absolute;
+  margin-top: 20px;
+  transform: translate(-50%, 0%);
+  left: 10%;
+  top: 23%;
+  z-index: 2;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+.point:hover {
+  cursor: pointer;
+}
+.point:focus ~ .popap-container {
+  opacity: 1;
+  transform-origin: center center;
 }/*# sourceMappingURL=pop.css.map */

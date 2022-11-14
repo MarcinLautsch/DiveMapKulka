@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/pop.css">
 </head>
 
@@ -148,7 +151,7 @@
             </a>
         </div>
         <div class="legenda-bg">
-            <div class="legend-text">legenda</div>
+            <div class="legend-text">Legenda</div>
             <ol>
                 <li>11</li>
                 <li>21</li>
@@ -182,36 +185,38 @@
                 <li>301</li>
             </ol>
             <div class="compass">
-                kompas
+                <img src="/src/kompas.png" alt="">
             </div>
         </div>
 
     </div>
     <div class="map"><img src="/src/mapa.jpg" alt="">
-        <div class="ikonka">+</div>
-        <div class="popap">
-            <div class='info'>
-                <img src="/src/paris.jpg" alt="">
-                <p>
-                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia excepturi ex non eius dol
-                        placeat eaque.</span>
-                </p>
+        <button class="point" type="button">+</button>
+
+        <div class="popap-container">
+            <div class="popap-container__shadow"></div>
+            <div class="popap-container__content">
+                <div class='info'>
+                    <img class="img-info" src="http://nemowkulce.pl/images/slider/dka.jpg" alt="">
+                    <p class="diveInfo">
+                        <span>
+                            <ol class="infoPlace">
+                                <li>Obiekt:<span> Łódź</span></li>
+                                <li>Głębokość: <span> 26m</span></li>
+                                <li>Czas z punktu Start:<span> 12min</span></li>
+                                <li>Zagrożenia: <span> Brak</span></li>
+                            </ol>
+                        </span>
+                    </p>
+                </div>
+
             </div>
 
-        </div>
-
-        <div class="popap popap--2">
-            <div class='info'>
-                <img src="/src/paris.jpg" alt="">
-                <p>
-                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia excepturi ex non eius dol
-                        placeat eaque.</span>
-                </p>
-            </div>
 
         </div>
 
     </div>
 </body>
+
 
 </html>
