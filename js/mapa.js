@@ -14,7 +14,7 @@ function generateData() {
 			class="popap-container"
 			style="
 				left: ${point.position.left}%;   
-				top: ${point.position.top - 9}%
+				top: ${point.position.top - 7}%
 			"
 		>
 			<div class="popap-container__shadow"></div>
@@ -50,7 +50,7 @@ function generateLegend() {
 generateData()
 generateLegend()
 
-// funkcja ktora wywoluje popap
+// funkcja ktora wywoluje popap po kliknieciu go
 
 function handleOnClick(event) {
 	const eventTargetId = event.target.id
@@ -58,7 +58,7 @@ function handleOnClick(event) {
 	popapContainer.classList.toggle('popap-container--is-visible')
 }
 
-// czeka na załadowanie strony oraz javascript ponizej zapis i przypisuje EventHandler> OnClick do button
+// czeka na załadowanie strony oraz javascript ponizszy zapis i przypisuje EventHandler> OnClick do button
 
 window.addEventListener('load', function () {
 	mapa.forEach(point => {
