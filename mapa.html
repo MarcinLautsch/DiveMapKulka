@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=2500px, initial-scale=1.0, user-scalable=0">
     <title>Pop</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,6 +13,7 @@
 </head>
 
 <body>
+
 
     <div class='oversize'>
         <div class="logo">
@@ -152,45 +153,7 @@
         </div>
         <div class="legenda-bg">
             <div class="legend-text">Legenda</div>
-            <ol>
-                <li><a href="/src/lodka.jpg" class="btn photo"><span>platforma </span> 6m</li></a>
-                <li><span>wózki kopalniane 2 szt. </span> 8m</li>
-                <li><span>palisada drewniana </span> 9m</li>
-                <li><span>kajak</span> 10m </li>
-                <li><span>platforma</span> 11m</li>
-                <li><span>łódź wikingów</span> 12m</li>
-                <li><span>titanic</span> 13m</li>
-                <li><span>potiomkin</span> 14m</li>
-                <li><span>łodź abbys i druga łódka</span> 32m</li>
-
-
-                <li>41</li>
-                <li>51</li>
-                <li>61</li>
-                <li>71</li>
-                <li>81</li>
-                <li>91</li>
-                <li>101</li>
-                <li>111</li>
-                <li>121</li>
-                <li>131</li>
-                <li>141</li>
-                <li>151</li>
-                <li>161</li>
-                <li>171</li>
-                <li>181</li>
-                <li>191</li>
-                <li>201</li>
-                <li>211</li>
-                <li>221</li>
-                <li>231</li>
-                <li>241</li>
-                <li>251</li>
-                <li>261</li>
-                <li>271</li>
-                <li>281</li>
-                <li>291</li>
-                <li>301</li>
+            <ol id="legend-list">
             </ol>
             <div class="compass">
                 <img src="/src/kompas.png" alt="">
@@ -198,51 +161,11 @@
         </div>
 
     </div>
-    <div class="map"><img src="/src/mapa.jpg" alt="">
-        <button class="point" type="button">+</button>
-        <button class="point-2" type="button">+</button>
-
-        <div class="popap-container">
-            <div class="popap-container__shadow"></div>
-            <div class="popap-container__content">
-                <div class='info'>
-                    <img class="img-info" src="/src/lodka.jpg" alt="łódź vikingów">
-                    <p class="diveInfo">
-                        <span>
-                            <ol class="infoPlace">
-                                <li>Obiekt:<span> łódź</span></li>
-                                <li>Głębokość: <span> 18m</span></li>
-                                <li>Czas z punktu Start:<span> 7min</span></li>
-                                <li>Zagrożenia: <span> Brak</span></li>
-                            </ol>
-                        </span>
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="popap-container-2">
-            <div class="popap-container__shadow"></div>
-            <div class="popap-container__content">
-                <div class='info'>
-                    <img class="img-info" src="/src/ramie.jpg" alt="łódź vikingów">
-                    <p class="diveInfo">
-                        <span>
-                            <ol class="infoPlace">
-                                <li>Obiekt:<span> Ramię</span></li>
-                                <li>Głębokość: <span> 21m</span></li>
-                                <li>Czas z punktu Start:<span> 17min</span></li>
-                                <li>Zagrożenia: <span> Brak</span></li>
-                            </ol>
-                        </span>
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        
+    <div id="map" class="map">
+        <img src="/src/mapa.jpg" alt="">
     </div>
-
+    <script type="text/javascript" src="js/data.js"></script>
+    <script type="text/javascript" src="js/mapa.js"></script>
 </body>
 
 
