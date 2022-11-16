@@ -21,16 +21,13 @@
 .map {
 	overflow: hidden;
 	position: relative;
-	width: 100vw;
+	width: 100%;
+	border-top: 4px solid whitesmoke;
 }
 
 img {
 	display: block;
 	width: 100%;
-}
-
-.map {
-	border-top: 4px solid whitesmoke;
 }
 
 .img-info {
@@ -43,6 +40,7 @@ img {
 li {
 	text-transform: lowercase;
 	font-weight: bold;
+	cursor: pointer;
 
 	&::marker {
 		font-style: italic;
@@ -199,10 +197,11 @@ ol {
 }
 
 .btn {
-	z-index: 20;
+	
 	position: absolute;
-	transform: translate(1142px, 580px);
-	color: white;
+	left: 81%;
+	top: 30.5%;
+	color: rgb(234, 0, 255);
 	text-decoration: none;
 	font-size: 130px;
 	opacity: 0;

@@ -53,7 +53,7 @@ function generateLegend() {
 	const container = document.getElementById('legend-list')
 	mapa.forEach(point => {
 		container.innerHTML += `
-		<li id='list-element-${point.id}'><a class="btn-photo"><span>${point.object} </span> ${point.depth}</li></a>
+		<li data-id="${point.id}">${point.object} ${point.depth}</li>
 	`
 	})
 }
@@ -75,5 +75,8 @@ window.addEventListener('load', function () {
 	mapa.forEach(point => {
 		const button = document.querySelector(`.point[data-id="${point.id}"]`)
 		button.addEventListener('click', handleOnClick.bind(point.id))
+
+		const legend = document.querySelector(`#legend-list li[data-id="${point.id}"]`)
+		legend.addEventListener('click', handleOnClick.bind(point.id))
 	})
 })
