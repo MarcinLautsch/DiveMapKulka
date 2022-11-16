@@ -16,6 +16,7 @@ body {
   display: flex;
   align-items: center;
   height: 170px;
+  overflow: hidden;
 }
 
 .logo {
@@ -204,4 +205,4 @@ ol {
   text-decoration: none;
   font-size: 130px;
   opacity: 0;
-}/*# sourceMappingURL=mapa.css.map */
+}/*# sourceMappingURL=style.css.map */
