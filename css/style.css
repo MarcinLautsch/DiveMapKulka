@@ -13,10 +13,10 @@ body {
 }
 
 .oversize {
+  overflow: hidden;
   display: flex;
   align-items: center;
   height: 170px;
-  overflow: hidden;
 }
 
 .logo {
