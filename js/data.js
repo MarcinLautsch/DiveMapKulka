@@ -61,14 +61,14 @@ const mapa = [
 	},
 	{
 		id: 6,
-		image: './src',
+		image: './src/viking.jpg',
 		object: 'łódz wikingów',
 		depth: '12m',
 		timeFromStart: '17min',
 		danger: 'brak',
 		position: {
-			left: 50,
-			top: 25,
+			left: 66.4,
+			top: 69.4,
 		},
 	},
 	{
@@ -121,14 +121,14 @@ const mapa = [
 	},
 	{
 		id: 11,
-		image: './src',
+		image: './src/krzyz.jpg',
 		object: 'krzyż i ścianka',
 		depth: '21m',
 		timeFromStart: '??in',
 		danger: 'brak',
 		position: {
-			left: 50,
-			top: 25,
+			left: 99,
+			top: 38.6,
 		},
 	},
 	{
@@ -187,26 +187,26 @@ const mapa = [
 		timeFromStart: '??in',
 		danger: 'brak',
 		position: {
-			left: 50,
-			top: 25,
+			left: 2.8,
+			top: 56,
 		},
 	},
 	{
 		id: 17,
-		image: './src',
+		image: './src/polonezTruck.jpg',
 		object: 'polonez truck',
 		depth: '27m',
-		timeFromStart: '??in',
+		timeFromStart: '??min',
 		danger: 'brak',
 		position: {
-			left: 50,
-			top: 25,
+			left: 18.2,
+			top: 44.8,
 		},
 	},
 	{
 		id: 18,
 		image: './src',
-		object: 'polonez truck',
+		object: 'masz z łodzi',
 		depth: '27m',
 		timeFromStart: '??in',
 		danger: 'brak',
@@ -217,7 +217,7 @@ const mapa = [
 	},
 	{
 		id: 19,
-		image: './src',
+		image: './src/kolek.jpg',
 		object: 'kołek',
 		depth: '22m',
 		timeFromStart: '??in',
@@ -229,7 +229,7 @@ const mapa = [
 	},
 	{
 		id: 20,
-		image: './src',
+		image: './src/sprinter.jpg',
 		object: 'sprinter',
 		depth: '18-22m',
 		timeFromStart: '??in',
@@ -361,26 +361,26 @@ const mapa = [
 	},
 	{
 		id: 31,
-		image: './src/ramie.jpg',
+		image: './src/brzoza.jpg',
 		object: 'powalona brzoza',
 		depth: '5m',
 		timeFromStart: '??',
 		danger: 'brak',
 		position: {
-			left: 49.35, //zmina na number w celu łatwijszego pozycjonowania
-			top: 53.25, //zmina na number w celu łatwijszego pozycjonowania
+			left: 30.2, //zmina na number w celu łatwijszego pozycjonowania
+			top: 82.5, //zmina na number w celu łatwijszego pozycjonowania
 		},
 	},
 	{
 		id: 32,
-		image: './src/ramie.jpg',
+		image: './src/brzoza1.jpg',
 		object: 'powalona brzoza',
 		depth: '6m',
 		timeFromStart: '??',
 		danger: 'brak',
 		position: {
-			left: 49.35, //zmina na number w celu łatwijszego pozycjonowania
-			top: 53.25, //zmina na number w celu łatwijszego pozycjonowania
+			left: 21.7, //zmina na number w celu łatwijszego pozycjonowania
+			top: 82.5, //zmina na number w celu łatwijszego pozycjonowania
 		},
 	},
 ]

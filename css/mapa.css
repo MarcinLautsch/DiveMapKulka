@@ -5,6 +5,8 @@
 }
 
 body {
+  width: 100vw;
+  height: 100vh;
   font-family: "Montserrat";
   font-size: 40px;
   background-color: #333;
@@ -114,7 +116,7 @@ ol {
 .popap-container__content {
   position: relative;
   width: 100%;
-  padding: 20px;
+  padding: 12px;
   font-size: 18px;
   background: linear-gradient(-45deg, #37d5d6, #36096d);
   border-radius: 25px;
@@ -185,7 +187,7 @@ ol {
   z-index: 20;
   position: absolute;
   transform: translate(1142px, 580px);
-  color: #000;
+  color: white;
   text-decoration: none;
   font-size: 130px;
   opacity: 0;

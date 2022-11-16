@@ -14,7 +14,7 @@ function generateData() {
 			class="popap-container"
 			style="
 				left: ${point.position.left}%;   
-				top: ${point.position.top - 7}%
+				top: ${point.position.top - 8}%
 			"
 		>
 			<div class="popap-container__shadow"></div>
