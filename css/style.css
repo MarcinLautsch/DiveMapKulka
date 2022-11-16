@@ -25,6 +25,7 @@ body {
 }
 
 .map {
+  overflow: hidden;
   position: relative;
   width: 100vw;
 }
@@ -112,6 +113,18 @@ ol {
 }
 .popap-container--is-visible {
   opacity: 1;
+}
+.popap-container--right {
+  margin-left: -110px;
+}
+.popap-container--right .popap-container__content::before {
+  left: 90%;
+}
+.popap-container--left {
+  margin-left: 110px;
+}
+.popap-container--left .popap-container__content::before {
+  left: 10%;
 }
 .popap-container__content {
   position: relative;

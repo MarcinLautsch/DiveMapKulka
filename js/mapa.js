@@ -4,13 +4,16 @@ function generateData() {
 	const container = document.getElementById('map')
 
 	mapa.forEach(point => {
+		const isOnTheRight = point.position.left > 90
+		const isOnTheLeft = point.position.left < 10
+
 		container.innerHTML += `
-		<button id="button-${point.id}" class="point" type="button" style="left: ${point.position.left}%; top: ${
+		<button data-id=${point.id} class="point" type="button" style="left: ${point.position.left}%; top: ${
 			point.position.top
 		}%">+</button>
 	
 		<div
-			id="popap-container-button-${point.id}"
+			data-id=${point.id}
 			class="popap-container"
 			style="
 				left: ${point.position.left}%;   
@@ -35,6 +38,14 @@ function generateData() {
 			</div>
 		</div>
 		`
+
+		if (isOnTheRight) {
+			container.querySelector(`.popap-container[data-id="${point.id}"]`).classList.add('popap-container--right')
+		}
+
+		if (isOnTheLeft) {
+			container.querySelector(`.popap-container[data-id="${point.id}"]`).classList.add('popap-container--left')
+		}
 	})
 }
 
@@ -53,8 +64,8 @@ generateLegend()
 // funkcja ktora wywoluje popap po kliknieciu go
 
 function handleOnClick(event) {
-	const eventTargetId = event.target.id
-	const popapContainer = document.getElementById(`popap-container-${eventTargetId}`)
+	const pointId = event.target.dataset.id
+	const popapContainer = document.querySelector(`.popap-container[data-id="${pointId}"]`)
 	popapContainer.classList.toggle('popap-container--is-visible')
 }
 
@@ -62,7 +73,7 @@ function handleOnClick(event) {
 
 window.addEventListener('load', function () {
 	mapa.forEach(point => {
-		const button = document.getElementById(`button-${point.id}`)
-		button.addEventListener('click', handleOnClick)
+		const button = document.querySelector(`.point[data-id="${point.id}"]`)
+		button.addEventListener('click', handleOnClick.bind(point.id))
 	})
 })
