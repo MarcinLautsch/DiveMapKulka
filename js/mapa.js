@@ -8,9 +8,9 @@ function generateData() {
 		const isOnTheLeft = point.position.left < 10
 
 		container.innerHTML += `
-		<button data-id=${point.id} class="point" type="button" style="left: ${point.position.left}%; top: ${
-			point.position.top
-		}%">+</button>
+		<button data-id=${point.id} id="point-${point.id}" class="point" type="button" style="left: ${
+			point.position.left
+		}%; top: ${point.position.top}%">+</button>
 	
 		<div
 			data-id=${point.id}
@@ -53,7 +53,7 @@ function generateLegend() {
 	const container = document.getElementById('legend-list')
 	mapa.forEach(point => {
 		container.innerHTML += `
-		<li data-id="${point.id}">${point.object} ${point.depth}</li>
+		<li data-id="${point.id}"><a href="#point-${point.id}"> ${point.object} ${point.depth}</a></li>
 	`
 	})
 }
