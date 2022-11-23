@@ -6,8 +6,11 @@
 }
 
 .oversize {
-	overflow: hidden;
+	position: sticky;
+	top: 0px;
+	z-index: 2;
 	display: flex;
+	overflow: hidden;
 	align-items: center;
 	height: 170px;
 }
@@ -15,7 +18,7 @@
 .logo {
 	margin-left: 50px;
 	width: 400px;
-	filter: drop-shadow(0 0mm 4mm rgb(245, 245, 245));
+	filter: drop-shadow(0 0mm 4mm rgb(255, 255, 255));
 }
 
 .map {
@@ -197,7 +200,6 @@ ol {
 }
 
 .btn {
-	
 	position: absolute;
 	left: 81%;
 	top: 30.5%;
