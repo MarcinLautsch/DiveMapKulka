@@ -5,6 +5,12 @@
 	height: $h;
 }
 
+body {
+	font-family: 'Montserrat';
+	font-size: 40px;
+	background-color: #333;
+}
+
 .oversize {
 	position: sticky;
 	top: 0px;
@@ -98,7 +104,6 @@ ol {
 
 .popap-container {
 	$popapContainer: &;
-
 	opacity: 0;
 	position: absolute;
 	transform: translate(-50%, -60%);
