@@ -5,11 +5,13 @@
 }
 
 body {
-  width: 100vw;
-  height: 100vh;
   font-family: "Montserrat";
   font-size: 40px;
   background-color: #333;
+}
+
+.container {
+  min-width: 1580px;
 }
 
 .oversize {
@@ -32,8 +34,19 @@ body {
 .map {
   overflow: hidden;
   position: relative;
-  width: 100%;
   border-top: 4px solid whitesmoke;
+}
+
+.poreczowki {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.poreczowki .poreczowka-line {
+  stroke: blue;
+  stroke-width: 1px;
 }
 
 img {
@@ -197,6 +210,14 @@ ol {
 }
 .point:hover {
   cursor: pointer;
+}
+
+.point-label {
+  position: absolute;
+  transform: translate(-50%, 0%);
+  font-size: 14px;
+  text-transform: capitalize;
+  font-weight: bold;
 }
 
 .btn {

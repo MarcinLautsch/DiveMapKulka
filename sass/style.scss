@@ -11,6 +11,10 @@ body {
 	background-color: #333;
 }
 
+.container {
+	min-width: 1580px;
+}
+
 .oversize {
 	position: sticky;
 	top: 0px;
@@ -30,8 +34,20 @@ body {
 .map {
 	overflow: hidden;
 	position: relative;
-	width: 100%;
 	border-top: 4px solid whitesmoke;
+}
+
+.poreczowki {
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	transition: opacity 0.3s;
+
+	.poreczowka-line {
+		stroke: blue;
+		stroke-width: 1px;
+	}
 }
 
 img {
@@ -202,6 +218,15 @@ ol {
 	&:hover {
 		cursor: pointer;
 	}
+}
+
+.point-label {
+	position: absolute;
+	transform: translate(-50%, 0%);
+
+	font-size: 14px;
+	text-transform: capitalize;
+	font-weight: bold;
 }
 
 .btn {

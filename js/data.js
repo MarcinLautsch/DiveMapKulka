@@ -13,50 +13,50 @@ const mapa = [
 	},
 	{
 		id: 2,
-		image: './src',
+		image: './src/test.jpg',
 		object: 'wózki kopalnia 2 szt.',
 		depth: '8m',
 		timeFromStart: '12min',
 		danger: 'brak',
 		position: {
-			left: 50,
-			top: 25,
+			left: 57.7,
+			top: 72.4,
 		},
 	},
 	{
 		id: 3,
-		image: './src',
+		image: './src/test.jpg',
 		object: 'palisada drewniana',
 		depth: '9m',
 		timeFromStart: '12min',
 		danger: 'brak',
 		position: {
-			left: 50,
-			top: 25,
+			left: 60.7,
+			top: 70,
 		},
 	},
 	{
 		id: 4,
-		image: './src',
+		image: './src/test.jpg',
 		object: 'kajak',
 		depth: '10m',
 		timeFromStart: '9min',
 		danger: 'brak',
 		position: {
-			left: 50,
-			top: 25,
+			left: 64.9,
+			top: 66.7,
 		},
 	},
 	{
 		id: 5,
-		image: './src',
+		image: './src/platforma2.jpg',
 		object: 'platforma',
 		depth: '11m',
 		timeFromStart: '11min',
 		danger: 'brak',
 		position: {
-			left: 50,
-			top: 25,
+			left: 62.9,
+			top: 63,
 		},
 	},
 	{
@@ -68,55 +68,55 @@ const mapa = [
 		danger: 'brak',
 		position: {
 			left: 66.4,
-			top: 69.4,
+			top: 69.3,
 		},
 	},
 	{
 		id: 7,
-		image: './src',
+		image: './src/test.jpg',
 		object: 'titanic',
 		depth: '13m',
 		timeFromStart: '19min',
 		danger: 'brak',
 		position: {
-			left: 50,
-			top: 25,
+			left: 75.2,
+			top: 68.2,
 		},
 	},
 	{
 		id: 8,
-		image: './src',
+		image: './src/test.jpg',
 		object: 'potiomkin',
 		depth: '14m',
 		timeFromStart: '24min',
 		danger: 'brak',
 		position: {
-			left: 50,
-			top: 25,
+			left: 95.9,
+			top: 64.3,
 		},
 	},
 	{
 		id: 9,
-		image: './src',
+		image: './src/test.jpg',
 		object: 'łódź abbys i druga łódka',
 		depth: '32m',
 		timeFromStart: '28min',
 		danger: 'brak',
 		position: {
-			left: 50,
-			top: 25,
+			left: 82.45,
+			top: 47.3,
 		},
 	},
 	{
 		id: 10,
-		image: './src',
+		image: './src/test.jpg',
 		object: 'skrzyżowanie',
 		depth: '38m',
 		timeFromStart: '??in',
 		danger: 'brak',
 		position: {
-			left: 50,
-			top: 25,
+			left: 90,
+			top: 39,
 		},
 	},
 	{
@@ -127,68 +127,68 @@ const mapa = [
 		timeFromStart: '??in',
 		danger: 'brak',
 		position: {
-			left: 99,
-			top: 38.6,
+			left: 96.75,
+			top: 39.4,
 		},
 	},
 	{
 		id: 12,
-		image: './src',
+		image: './src/test.jpg',
 		object: 'najgłębsze miejsce',
 		depth: '39.3m',
 		timeFromStart: '??in',
 		danger: 'brak',
 		position: {
-			left: 50,
-			top: 25,
+			left: 96.95,
+			top: 24.1,
 		},
 	},
 	{
 		id: 13,
-		image: './src',
+		image: './src/test.jpg',
 		object: 'skrzyżowanie „żelastwo”',
 		depth: '36m',
 		timeFromStart: '??in',
 		danger: 'brak',
 		position: {
-			left: 50,
-			top: 25,
+			left: 67.65,
+			top: 28.82,
 		},
 	},
 	{
 		id: 14,
-		image: './src',
+		image: './src/test.jpg',
 		object: 'żaglówka',
 		depth: '33m',
 		timeFromStart: '??in',
 		danger: 'brak',
 		position: {
-			left: 50,
-			top: 25,
+			left: 52.45,
+			top: 29.2,
 		},
 	},
 	{
 		id: 15,
-		image: './src',
+		image: './src/test.jpg',
 		object: 'łódź duza',
 		depth: '34m',
 		timeFromStart: '??in',
 		danger: 'brak',
 		position: {
-			left: 50,
-			top: 25,
+			left: 35.1,
+			top: 25.55,
 		},
 	},
 	{
 		id: 16,
-		image: './src',
+		image: './src/test.jpg',
 		object: 'żagłowka omega',
 		depth: '13m',
 		timeFromStart: '??in',
 		danger: 'brak',
 		position: {
-			left: 2.8,
-			top: 56,
+			left: 5.73,
+			top: 46.2,
 		},
 	},
 	{
@@ -199,20 +199,20 @@ const mapa = [
 		timeFromStart: '??min',
 		danger: 'brak',
 		position: {
-			left: 18.2,
-			top: 44.8,
+			left: 18.25,
+			top: 44.7,
 		},
 	},
 	{
 		id: 18,
-		image: './src',
+		image: './src/test.jpg',
 		object: 'masz z łodzi',
 		depth: '27m',
 		timeFromStart: '??in',
 		danger: 'brak',
 		position: {
-			left: 50,
-			top: 25,
+			left: 32.24,
+			top: 45.4,
 		},
 	},
 	{
@@ -265,14 +265,14 @@ const mapa = [
 	},
 	{
 		id: 23,
-		image: './src/trabant.jpg',
+		image: './src/test.jpg',
 		object: 'rower wodny',
 		depth: '11m',
 		timeFromStart: '??',
 		danger: 'brak',
 		position: {
-			left: 33.2,
-			top: 74.1,
+			left: 48.87,
+			top: 70,
 		},
 	},
 	{
@@ -289,26 +289,26 @@ const mapa = [
 	},
 	{
 		id: 25,
-		image: './src/trabant.jpg',
+		image: './src/test.jpg',
 		object: 'skrzyżowanie',
 		depth: '12m',
 		timeFromStart: '??',
 		danger: 'brak',
 		position: {
-			left: 33.2,
-			top: 74.1,
+			left: 55.68,
+			top: 67.45,
 		},
 	},
 	{
 		id: 26,
-		image: './src/trabant.jpg',
+		image: './src/test.jpg',
 		object: 'rower i skrzyżowanie',
 		depth: '17m',
 		timeFromStart: '??',
 		danger: 'brak',
 		position: {
-			left: 33.2,
-			top: 74.1,
+			left: 56.3,
+			top: 63.2,
 		},
 	},
 	{
@@ -319,44 +319,44 @@ const mapa = [
 		timeFromStart: '9min',
 		danger: 'brak',
 		position: {
-			left: 49.35, //zmina na number w celu łatwijszego pozycjonowania
-			top: 53.25, //zmina na number w celu łatwijszego pozycjonowania
+			left: 49.35,
+			top: 53.25,
 		},
 	},
 	{
 		id: 28,
-		image: './src/ramie.jpg',
+		image: './src/test.jpg',
 		object: 'platforma',
 		depth: '25m',
 		timeFromStart: '??',
 		danger: 'brak',
 		position: {
-			left: 49.35, //zmina na number w celu łatwijszego pozycjonowania
-			top: 53.25, //zmina na number w celu łatwijszego pozycjonowania
+			left: 58.25,
+			top: 49.15,
 		},
 	},
 	{
 		id: 29,
-		image: './src/ramie.jpg',
+		image: './src/test.jpg',
 		object: 'wiosło',
 		depth: '29m',
 		timeFromStart: '??',
 		danger: 'brak',
 		position: {
-			left: 49.35, //zmina na number w celu łatwijszego pozycjonowania
-			top: 53.25, //zmina na number w celu łatwijszego pozycjonowania
+			left: 53.33,
+			top: 45,
 		},
 	},
 	{
 		id: 30,
-		image: './src/ramie.jpg',
+		image: './src/test.jpg',
 		object: 'łańcuch',
 		depth: '4m',
 		timeFromStart: '??',
 		danger: 'brak',
 		position: {
-			left: 49.35, //zmina na number w celu łatwijszego pozycjonowania
-			top: 53.25, //zmina na number w celu łatwijszego pozycjonowania
+			left: 45.72,
+			top: 77.45,
 		},
 	},
 	{
@@ -367,8 +367,8 @@ const mapa = [
 		timeFromStart: '??',
 		danger: 'brak',
 		position: {
-			left: 30.2, //zmina na number w celu łatwijszego pozycjonowania
-			top: 82.5, //zmina na number w celu łatwijszego pozycjonowania
+			left: 30.2,
+			top: 82.5,
 		},
 	},
 	{
@@ -379,8 +379,20 @@ const mapa = [
 		timeFromStart: '??',
 		danger: 'brak',
 		position: {
-			left: 21.7, //zmina na number w celu łatwijszego pozycjonowania
-			top: 82.5, //zmina na number w celu łatwijszego pozycjonowania
+			left: 21.7,
+			top: 82.5,
+		},
+	},
+	{
+		id: 33,
+		image: './src/test.jpg',
+		object: 'pomost ZHP',
+		depth: '1m',
+		timeFromStart: '??',
+		danger: 'brak',
+		position: {
+			left: 2.02,
+			top: 81.25,
 		},
 	},
 ]
