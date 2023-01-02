@@ -387,7 +387,7 @@ const mapa = [
 		id: 33,
 		image: './src/test.jpg',
 		object: 'pomost ZHP',
-		depth: '1m',
+		depth: '0m',
 		timeFromStart: '??',
 		danger: 'brak',
 		position: {

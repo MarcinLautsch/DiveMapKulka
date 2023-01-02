@@ -8,9 +8,6 @@ function generateData() {
 		const isOnTheLeft = point.position.left < 10
 
 		container.innerHTML += `
-		<label data-name="point-label" class="point-label" style="left: ${point.position.left}%; top: ${
-			point.position.top + 3
-		}%">${point.id}. ${point.object}</label>
 		<button data-id=${point.id} id="point-${point.id}" class="point" type="button" style="left: ${
 			point.position.left
 		}%; top: ${point.position.top}%">+</button>
@@ -67,7 +64,11 @@ generateLegend()
 // funkcja ktora wywoluje popap po kliknieciu go
 
 function handleOnClick(event) {
+	event.stopPropagation()
 	const pointId = event.target.dataset.id
+	const popapContainers = document.querySelectorAll(`.popap-container`)
+	popapContainers.forEach(popup => popup.classList.remove('popap-container--is-visible'))
+
 	const popapContainer = document.querySelector(`.popap-container[data-id="${pointId}"]`)
 	popapContainer.classList.toggle('popap-container--is-visible')
 }
@@ -75,6 +76,13 @@ function handleOnClick(event) {
 // czeka na załadowanie strony oraz javascript ponizszy zapis i przypisuje EventHandler> OnClick do button
 
 window.addEventListener('load', function () {
+	const map = document.getElementById('map')
+
+	map.addEventListener('click', () => {
+		const popapContainers = document.querySelectorAll(`.popap-container`)
+		popapContainers.forEach(popup => popup.classList.remove('popap-container--is-visible'))
+	})
+
 	mapa.forEach(point => {
 		const button = document.querySelector(`.point[data-id="${point.id}"]`)
 		button.addEventListener('click', handleOnClick.bind(point.id))
@@ -84,9 +92,7 @@ window.addEventListener('load', function () {
 	})
 
 	const button = document.getElementById('poreczowki-button')
-	const buttonLabels = document.getElementById('poreczowki-labels')
 	const poreczowki = document.getElementById('poreczowki')
-	const labels = document.querySelectorAll('[data-name="point-label"]')
 
 	button.addEventListener('click', () => {
 		if (poreczowki.style.opacity === '1') {
@@ -94,16 +100,6 @@ window.addEventListener('load', function () {
 		} else {
 			poreczowki.style.opacity = '1'
 		}
-	})
-
-	buttonLabels.addEventListener('click', () => {
-		labels.forEach(label => {
-			if (label.style.opacity === '1') {
-				label.style.opacity = '0'
-			} else {
-				label.style.opacity = '1'
-			}
-		})
 	})
 })
 
