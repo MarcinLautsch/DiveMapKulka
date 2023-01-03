@@ -31,6 +31,10 @@ body {
   filter: drop-shadow(0 0mm 4mm rgb(255, 255, 255));
 }
 
+.logo2 {
+  margin-right: 50px;
+}
+
 .map {
   overflow: hidden;
   position: relative;
@@ -241,7 +245,8 @@ ol {
 
 .btn-poreczowki {
   position: relative;
-  margin-left: 150px;
+  margin-top: 20px;
+  margin-left: 95px;
   color: rgb(0, 0, 0);
   font-size: 18px;
   font-weight: bold;
