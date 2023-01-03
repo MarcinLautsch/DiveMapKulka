@@ -134,7 +134,7 @@ const mapa = [
 	{
 		id: 12,
 		image: './src/test.jpg',
-		object: 'najgłębsze miejsce',
+		object: 'Głębia',
 		depth: '39.3m',
 		timeFromStart: '??in',
 		danger: 'brak',
