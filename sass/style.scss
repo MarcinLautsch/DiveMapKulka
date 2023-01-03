@@ -248,22 +248,39 @@ ol {
 }
 
 .btn-poreczowki {
+	position: relative;
 	margin-left: 150px;
-	color: #333;
+	color: rgb(0, 0, 0);
 	font-size: 18px;
 	font-weight: bold;
 	letter-spacing: 1.2px;
 	width: 180px;
 	height: 50px;
-	border: none;
+	border: 1.4px solid whitesmoke;
 	border-radius: 15px;
-	background-color: #1e7eeb;
+	background: linear-gradient(to right top, #16806a, rgba(255, 255, 255, 0.8));
+	overflow: hidden;
 	cursor: pointer;
 	transition: color 0.4s ease-in-out, transform 0.4s ease-in-out, background-color 0.4s ease-in-out;
 }
 
 .btn-poreczowki:hover {
-	background-color: rgb(2, 182, 122);
-	transform: scale(0.88);
+	transform: scale(0.94);
 	color: whitesmoke;
+}
+
+.btn-poreczowki:after {
+	content: '';
+	position: absolute;
+	left: -60px;
+	top: -15px;
+	width: 50px;
+	height: 150%;
+	background-color: rgba(255, 255, 255, 0.4);
+	transform: rotate(20deg);
+	transition: transform 0.4s ease-in-out;
+}
+
+.btn-poreczowki:hover:after {
+	transform: translateX(250px) rotate(20deg);
 }

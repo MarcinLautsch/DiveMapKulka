@@ -14,7 +14,7 @@ const mapa = [
 	{
 		id: 2,
 		image: './src/test.jpg',
-		object: 'wózki kopalnia 2 szt.',
+		object: 'wózki 2 szt.',
 		depth: '8m',
 		timeFromStart: '12min',
 		danger: 'brak',
@@ -62,7 +62,7 @@ const mapa = [
 	{
 		id: 6,
 		image: './src/viking.jpg',
-		object: 'łódz wikingów',
+		object: 'łódź wikingów',
 		depth: '12m',
 		timeFromStart: '17min',
 		danger: 'brak',
@@ -98,7 +98,7 @@ const mapa = [
 	{
 		id: 9,
 		image: './src/test.jpg',
-		object: 'łódź abbys i druga łódka',
+		object: 'łódź abbys',
 		depth: '32m',
 		timeFromStart: '28min',
 		danger: 'brak',
@@ -146,7 +146,7 @@ const mapa = [
 	{
 		id: 13,
 		image: './src/test.jpg',
-		object: 'skrzyżowanie „żelastwo”',
+		object: '„żelastwo”',
 		depth: '36m',
 		timeFromStart: '??in',
 		danger: 'brak',
@@ -170,7 +170,7 @@ const mapa = [
 	{
 		id: 15,
 		image: './src/test.jpg',
-		object: 'łódź duza',
+		object: 'łódź duża',
 		depth: '34m',
 		timeFromStart: '??in',
 		danger: 'brak',
@@ -182,7 +182,7 @@ const mapa = [
 	{
 		id: 16,
 		image: './src/test.jpg',
-		object: 'żagłowka omega',
+		object: 'żaglówka omega',
 		depth: '13m',
 		timeFromStart: '??in',
 		danger: 'brak',
@@ -206,7 +206,7 @@ const mapa = [
 	{
 		id: 18,
 		image: './src/test.jpg',
-		object: 'masz z łodzi',
+		object: 'maszt z łodzi',
 		depth: '27m',
 		timeFromStart: '??in',
 		danger: 'brak',
@@ -302,7 +302,7 @@ const mapa = [
 	{
 		id: 26,
 		image: './src/test.jpg',
-		object: 'rower i skrzyżowanie',
+		object: 'rower',
 		depth: '17m',
 		timeFromStart: '??',
 		danger: 'brak',
