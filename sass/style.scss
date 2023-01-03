@@ -219,7 +219,7 @@ ol {
 
 .point {
 	opacity: 1;
-	color: rgb(197, 2, 181);
+	color: rgba(245, 245, 245, 0.6);
 	position: absolute;
 	transform: translate(-50%, 0%);
 	left: 10%;
@@ -258,7 +258,7 @@ ol {
 	height: 50px;
 	border: 1.4px solid whitesmoke;
 	border-radius: 15px;
-	background: linear-gradient(to right top, #16806a, rgba(255, 255, 255, 0.8));
+	background: linear-gradient(to right top, #16806a, rgba(255, 255, 255, 0.5));
 	overflow: hidden;
 	cursor: pointer;
 	transition: color 0.4s ease-in-out, transform 0.4s ease-in-out, background-color 0.4s ease-in-out;
