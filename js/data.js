@@ -242,8 +242,8 @@ const mapa = [
 	{
 		id: 21,
 		image: './src/trabant.jpg',
-		object: 'maszt z łodzi',
-		depth: '24m',
+		object: 'Trabant',
+		depth: '10m',
 		timeFromStart: '12min',
 		danger: 'brak',
 		position: {
