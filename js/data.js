@@ -73,7 +73,7 @@ const mapa = [
 	},
 	{
 		id: 7,
-		image: './src/test.jpg',
+		image: './src/titanic.jpg',
 		object: 'titanic',
 		depth: '13m',
 		timeFromStart: '19min',
@@ -85,7 +85,7 @@ const mapa = [
 	},
 	{
 		id: 8,
-		image: './src/test.jpg',
+		image: './src/pantionkin.jpg',
 		object: 'potiomkin',
 		depth: '14m',
 		timeFromStart: '24min',
