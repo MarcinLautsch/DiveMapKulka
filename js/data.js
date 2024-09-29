@@ -397,7 +397,7 @@ const mapa = [
 	},
 	{
 		id: 34,
-		image: './src/test.jpg',
+		image: './src/osmiornica.jpg',
 		object: 'Ośmiornica',
 		depth: '20m',
 		timeFromStart: '??',
