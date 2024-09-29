@@ -77,8 +77,8 @@ li a {
 }
 
 li::marker {
-  font-size: 11px;
-  color: magenta;
+  font-size: 14px;
+  color: rgb(238, 165, 8);
   font-weight: bold;
 }
 
