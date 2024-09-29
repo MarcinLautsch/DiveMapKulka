@@ -229,7 +229,7 @@ const mapa = [
 	},
 	{
 		id: 20,
-		image: './src/sprinter.jpg',
+		image: './src/sprinter2.jpg',
 		object: 'sprinter',
 		depth: '18-22m',
 		timeFromStart: '??in',
@@ -301,7 +301,7 @@ const mapa = [
 	},
 	{
 		id: 26,
-		image: './src/test.jpg',
+		image: './src/rower.jpg',
 		object: 'rower',
 		depth: '17m',
 		timeFromStart: '??',
@@ -325,7 +325,7 @@ const mapa = [
 	},
 	{
 		id: 28,
-		image: './src/test.jpg',
+		image: './src/platfroma25.jpg',
 		object: 'platforma',
 		depth: '25m',
 		timeFromStart: '??',
@@ -349,7 +349,7 @@ const mapa = [
 	},
 	{
 		id: 30,
-		image: './src/test.jpg',
+		image: './src/lancuch.jpg',
 		object: 'łańcuch',
 		depth: '4m',
 		timeFromStart: '??',
