@@ -97,7 +97,7 @@ const mapa = [
 	},
 	{
 		id: 9,
-		image: './src/test.jpg',
+		image: './src/abysowka.jpg',
 		object: 'łódź abbys',
 		depth: '32m',
 		timeFromStart: '28min',
@@ -145,7 +145,7 @@ const mapa = [
 	},
 	{
 		id: 13,
-		image: './src/test.jpg',
+		image: './src/zlom.jpg',
 		object: '„żelastwo”',
 		depth: '36m',
 		timeFromStart: '??in',
