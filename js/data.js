@@ -407,4 +407,16 @@ const mapa = [
 			top: 66.0,
 		},
 	},
+	{
+		id: 35,
+		image: './src/test.jpg',
+		object: '„żelastwo”',
+		depth: '9m',
+		timeFromStart: '??',
+		danger: 'brak',
+		position: {
+			left: 3.4,
+			top: 76.0,
+		},
+	},
 ]
