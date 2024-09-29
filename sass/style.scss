@@ -78,9 +78,9 @@ li {
 	}
 }
 
-li::marker {
+&::marker {
 	font-size: 11px;
-	color: magenta;
+	color: #eb5c2a;
 	font-weight: bold;
 }
 

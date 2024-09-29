@@ -183,7 +183,7 @@ const mapa = [
 		id: 16,
 		image: './src/test.jpg',
 		object: 'żaglówka omega',
-		depth: '13m',
+		depth: '30m',
 		timeFromStart: '??in',
 		danger: 'brak',
 		position: {
@@ -393,6 +393,18 @@ const mapa = [
 		position: {
 			left: 2.02,
 			top: 81.25,
+		},
+	},
+	{
+		id: 34,
+		image: './src/test.jpg',
+		object: 'Ośmiornica',
+		depth: '20m',
+		timeFromStart: '??',
+		danger: 'brak',
+		position: {
+			left: 5.0,
+			top: 66.0,
 		},
 	},
 ]
