@@ -409,7 +409,7 @@ const mapa = [
 	},
 	{
 		id: 35,
-		image: './src/test.jpg',
+		image: './src/zelastwo.jpg',
 		object: '„żelastwo”',
 		depth: '9m',
 		timeFromStart: '??',
