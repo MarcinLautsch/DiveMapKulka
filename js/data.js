@@ -1,7 +1,7 @@
 const mapa = [
 	{
 		id: 1,
-		image: './src/platforma.jpg',
+		image: './src/platforma1.jpg',
 		object: 'platforma',
 		depth: '6m',
 		timeFromStart: '2min',
